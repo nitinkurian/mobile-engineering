@@ -10,4 +10,6 @@
 
 @interface MEAObject : NSObject
 
++ (instancetype)instanceFromDictionary:(NSDictionary *)aDictionary;
+
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MEAObject.h"
 
-@interface MEAUser : NSObject
+@class MEAAvatar;
+
+@interface MEAUser : MEAObject
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, strong) MEAAvatar *avatar;
 
 @end

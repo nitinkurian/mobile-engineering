@@ -7,7 +7,10 @@
 //
 
 #import "MEAObject.h"
+#import "MEAWebService.h"
 
-@interface MEADeals : MEAObject
+@interface MEAModel : MEAObject
+
+- (void)getAllDealsWithCompletionBlock:(WebServiceCompletionCallback)completionBlock;
 
 @end

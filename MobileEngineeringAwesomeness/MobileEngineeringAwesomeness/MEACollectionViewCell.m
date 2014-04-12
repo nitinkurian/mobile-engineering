@@ -8,6 +8,16 @@
 
 #import "MEACollectionViewCell.h"
 
+@interface MEACollectionViewCell ()
+
+@property (nonatomic, weak) IBOutlet UILabel *desc;
+@property (nonatomic, weak) IBOutlet UILabel *attrib;
+@property (nonatomic, strong) NSString *buttonRef;
+
+- (IBAction)buttonPressed:(id)sender;
+
+@end
+
 @implementation MEACollectionViewCell
 
 - (id)initWithFrame:(CGRect)frame
@@ -27,5 +37,17 @@
     // Drawing code
 }
 */
+
+- (void)initializeWithAttrib:(NSString*)attrib
+                        desc:(NSString*)desc
+                        href:(NSString*)buttonRef
+{
+    
+    self.desc.text = desc;
+    self.attrib.text = attrib;
+    self.buttonRef = buttonRef;
+	
+}
+
 
 @end

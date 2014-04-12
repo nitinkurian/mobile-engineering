@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MEAViewController : UIViewController
+@interface MEAViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end

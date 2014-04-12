@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MEAWebViewController : UIViewController
+@interface MEAWebViewController : UIViewController <UIWebViewDelegate>
+
+@property (nonatomic, strong) NSString *loadUrl;
 
 @end

@@ -10,6 +10,10 @@
 
 @interface MEAWebViewController ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property(nonatomic,strong) NSString* htmlString;
+@property(nonatomic,strong) UIActivityIndicatorView* activityIndicator;
+
 @end
 
 @implementation MEAWebViewController
@@ -26,24 +30,60 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+     
+    self.webView.hidden = YES;
+    self.webView.delegate = self;
+
+    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    self.activityIndicator.center = CGPointMake(CGRectGetMidX(self.webView.bounds), CGRectGetMidY(self.webView.bounds));
+    [self.view insertSubview:self.activityIndicator belowSubview:self.webView];
+     
+    [self.activityIndicator startAnimating];
+    UIBarButtonItem* done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneTapped:)];
+    self.navigationItem.leftBarButtonItem = done;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillAppear:animated];
+    
+    NSURL *url = [NSURL URLWithString:self.loadUrl];
+    NSURLRequest *requestURL = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:requestURL];
+    self.webView.hidden = YES;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+#pragma mark - Optional UIWebViewDelegate delegate methods
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return YES;
 }
-*/
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    self.webView.hidden = NO;
+
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+
+- (void)doneTapped:(id)sender
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

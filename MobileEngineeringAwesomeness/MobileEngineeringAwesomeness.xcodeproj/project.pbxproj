@@ -21,6 +21,14 @@
 		3E5839FA18F8492B006989CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5839DC18F8492B006989CC /* UIKit.framework */; };
 		3E583A0218F8492B006989CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E583A0018F8492B006989CC /* InfoPlist.strings */; };
 		3E583A0418F8492B006989CC /* MobileEngineeringAwesomenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A0318F8492B006989CC /* MobileEngineeringAwesomenessTests.m */; };
+		3E583A1318F849E8006989CC /* MEAWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A1218F849E8006989CC /* MEAWebService.m */; };
+		3E583A1618F84AC5006989CC /* MEADeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A1518F84AC5006989CC /* MEADeal.m */; };
+		3E583A1918F84B57006989CC /* MEAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A1818F84B57006989CC /* MEAUser.m */; };
+		3E583A1C18F84CFA006989CC /* MEAAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A1B18F84CFA006989CC /* MEAAvatar.m */; };
+		3E583A1F18F84D77006989CC /* MEAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A1E18F84D77006989CC /* MEAObject.m */; };
+		3E583A2218F8687A006989CC /* MEAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A2118F8687A006989CC /* MEAModel.m */; };
+		3E583A2518F879DC006989CC /* MEACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A2418F879DC006989CC /* MEACollectionViewCell.m */; };
+		3E583A2818F8A01C006989CC /* MEAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E583A2718F8A01C006989CC /* MEAWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,22 @@
 		3E5839FF18F8492B006989CC /* MobileEngineeringAwesomenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileEngineeringAwesomenessTests-Info.plist"; sourceTree = "<group>"; };
 		3E583A0118F8492B006989CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E583A0318F8492B006989CC /* MobileEngineeringAwesomenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileEngineeringAwesomenessTests.m; sourceTree = "<group>"; };
+		3E583A1118F849E8006989CC /* MEAWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAWebService.h; sourceTree = "<group>"; };
+		3E583A1218F849E8006989CC /* MEAWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAWebService.m; sourceTree = "<group>"; };
+		3E583A1418F84AC5006989CC /* MEADeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEADeal.h; sourceTree = "<group>"; };
+		3E583A1518F84AC5006989CC /* MEADeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEADeal.m; sourceTree = "<group>"; };
+		3E583A1718F84B57006989CC /* MEAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAUser.h; sourceTree = "<group>"; };
+		3E583A1818F84B57006989CC /* MEAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAUser.m; sourceTree = "<group>"; };
+		3E583A1A18F84CFA006989CC /* MEAAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAAvatar.h; sourceTree = "<group>"; };
+		3E583A1B18F84CFA006989CC /* MEAAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAAvatar.m; sourceTree = "<group>"; };
+		3E583A1D18F84D77006989CC /* MEAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAObject.h; sourceTree = "<group>"; };
+		3E583A1E18F84D77006989CC /* MEAObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAObject.m; sourceTree = "<group>"; };
+		3E583A2018F8687A006989CC /* MEAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAModel.h; sourceTree = "<group>"; };
+		3E583A2118F8687A006989CC /* MEAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAModel.m; sourceTree = "<group>"; };
+		3E583A2318F879DC006989CC /* MEACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEACollectionViewCell.h; sourceTree = "<group>"; };
+		3E583A2418F879DC006989CC /* MEACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEACollectionViewCell.m; sourceTree = "<group>"; };
+		3E583A2618F8A01C006989CC /* MEAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAWebViewController.h; sourceTree = "<group>"; };
+		3E583A2718F8A01C006989CC /* MEAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +136,12 @@
 		3E5839DE18F8492B006989CC /* MobileEngineeringAwesomeness */ = {
 			isa = PBXGroup;
 			children = (
+				3E583A1018F849C5006989CC /* WebService */,
+				3E583A0F18F8496D006989CC /* View */,
+				3E583A0E18F84968006989CC /* Model */,
+				3E583A0D18F8495D006989CC /* Controller */,
 				3E5839E718F8492B006989CC /* MEAAppDelegate.h */,
 				3E5839E818F8492B006989CC /* MEAAppDelegate.m */,
-				3E5839EA18F8492B006989CC /* Main.storyboard */,
-				3E5839ED18F8492B006989CC /* MEAViewController.h */,
-				3E5839EE18F8492B006989CC /* MEAViewController.m */,
 				3E5839F018F8492B006989CC /* Images.xcassets */,
 				3E5839DF18F8492B006989CC /* Supporting Files */,
 			);
@@ -150,6 +175,53 @@
 				3E583A0018F8492B006989CC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E583A0D18F8495D006989CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E5839ED18F8492B006989CC /* MEAViewController.h */,
+				3E5839EE18F8492B006989CC /* MEAViewController.m */,
+				3E583A2618F8A01C006989CC /* MEAWebViewController.h */,
+				3E583A2718F8A01C006989CC /* MEAWebViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E583A0E18F84968006989CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E583A1418F84AC5006989CC /* MEADeal.h */,
+				3E583A1518F84AC5006989CC /* MEADeal.m */,
+				3E583A1718F84B57006989CC /* MEAUser.h */,
+				3E583A1818F84B57006989CC /* MEAUser.m */,
+				3E583A1A18F84CFA006989CC /* MEAAvatar.h */,
+				3E583A1B18F84CFA006989CC /* MEAAvatar.m */,
+				3E583A1D18F84D77006989CC /* MEAObject.h */,
+				3E583A1E18F84D77006989CC /* MEAObject.m */,
+				3E583A2018F8687A006989CC /* MEAModel.h */,
+				3E583A2118F8687A006989CC /* MEAModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3E583A0F18F8496D006989CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E5839EA18F8492B006989CC /* Main.storyboard */,
+				3E583A2318F879DC006989CC /* MEACollectionViewCell.h */,
+				3E583A2418F879DC006989CC /* MEACollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3E583A1018F849C5006989CC /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				3E583A1118F849E8006989CC /* MEAWebService.h */,
+				3E583A1218F849E8006989CC /* MEAWebService.m */,
+			);
+			name = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +322,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E583A1F18F84D77006989CC /* MEAObject.m in Sources */,
+				3E583A1618F84AC5006989CC /* MEADeal.m in Sources */,
+				3E583A1318F849E8006989CC /* MEAWebService.m in Sources */,
+				3E583A1918F84B57006989CC /* MEAUser.m in Sources */,
+				3E583A2818F8A01C006989CC /* MEAWebViewController.m in Sources */,
+				3E583A2518F879DC006989CC /* MEACollectionViewCell.m in Sources */,
+				3E583A2218F8687A006989CC /* MEAModel.m in Sources */,
 				3E5839E918F8492B006989CC /* MEAAppDelegate.m in Sources */,
+				3E583A1C18F84CFA006989CC /* MEAAvatar.m in Sources */,
 				3E5839EF18F8492B006989CC /* MEAViewController.m in Sources */,
 				3E5839E518F8492B006989CC /* main.m in Sources */,
 			);

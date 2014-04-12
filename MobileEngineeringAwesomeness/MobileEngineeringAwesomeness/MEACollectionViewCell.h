@@ -10,4 +10,10 @@
 
 @interface MEACollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+
+- (void)initializeWithAttrib:(NSString*)attrib
+                        desc:(NSString*)desc
+                        href:(NSString*)buttonRef;
+
 @end

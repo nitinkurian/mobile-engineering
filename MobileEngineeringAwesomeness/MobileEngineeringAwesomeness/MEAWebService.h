@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^WebServiceCallback)(NSURLResponse *response, NSData *data, NSError *connectionError);
+typedef void (^WebServiceCompletionCallback)(id JSON , NSError *error);
+
 @interface MEAWebService : NSObject
+
++ (MEAWebService *)manager;
+
+- (void)getDealsWithCompletionHandler:(WebServiceCompletionCallback)completionCallback;
+- (void)getImageFromUrl:(NSString *)url withCompletionHandler:(WebServiceCompletionCallback)completionCallback;
 
 @end

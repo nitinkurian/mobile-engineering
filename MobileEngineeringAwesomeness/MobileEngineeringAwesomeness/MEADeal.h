@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MEAObject.h"
+#import "MEAWebService.h"
 
-@interface MEADeal : NSObject
+@class MEAUser;
+
+@interface MEADeal : MEAObject
+
+@property (nonatomic, copy) NSString *attrib;
+@property (nonatomic, copy) NSString *desc;
+@property (nonatomic, copy) NSString *href;
+@property (nonatomic, copy) NSString *src;
+@property (nonatomic, strong) MEAUser *user;
+
+- (void)getImage:(WebServiceCompletionCallback)completionBlock;
 
 @end
