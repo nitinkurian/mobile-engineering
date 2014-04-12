@@ -14,8 +14,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *attrib;
 @property (nonatomic, strong) NSString *buttonRef;
 
-- (IBAction)buttonPressed:(id)sender;
-
 @end
 
 @implementation MEACollectionViewCell
